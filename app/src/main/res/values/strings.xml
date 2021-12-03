@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Zulip Chat</string>
+
+    <string name="user_photo_content_description">User photo</string>
+    <string name="add_reaction_button_content_description">Add reaction button</string>
+    <string name="expand_group_content_description">Expand group</string>
+    <string name="collapse_group_content_description">Collapse group</string>
+    <string name="profile_back_button_description">Back to People screen</string>
+    <string name="user_status_content_description">User status</string>
+    <string name="search_button_content_description">Search button</string>
+
+    <string name="type_message_hint">Type a message…</string>
+    <string name="channels_search_hint">Search…</string>
+    <string name="users_search_hint">Users…</string>
+
+    <string name="log_out_button">Log out</string>
+    <string name="retry_button">Retry</string>
+
+    <string name="channels">Streams</string>
+    <string name="people">People</string>
+    <string name="profile">Profile</string>
+    <string name="topic">Topic: #%s</string>
+
+    <string name="subscribed">Subscribed</string>
+    <string name="all_streams">All streams</string>
+
+    <string name="status_online">online</string>
+    <string name="status_offline">offline</string>
+
+    <string name="theme">Theme</string>
+    <string name="light_theme">Light theme</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="switch_theme_summary">Turn on dark theme</string>
+
+    <string name="custom_message_view_group_child_count_error">
+        ChildCount expected %d, but found %d</string>
+    <string name="send_message_error">Error sending message</string>
+    <string name="error_message">Error</string>
+</resources>

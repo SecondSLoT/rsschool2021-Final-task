@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/user_photo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        tools:src="@drawable/test_image"
+        android:contentDescription="@string/user_photo_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/status_image_view"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:contentDescription="@string/user_status_content_description"
+        android:src="@drawable/indicator_status_online"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/user_photo"
+        app:layout_constraintBottom_toBottomOf="@id/user_photo"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        tools:text="Darrell Steward"
+        android:textSize="22sp"
+        android:textColor="@color/message"
+        app:layout_constraintStart_toEndOf="@+id/user_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/email"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="darrell@company.com"
+        android:textSize="16sp"
+        android:textColor="@color/email_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

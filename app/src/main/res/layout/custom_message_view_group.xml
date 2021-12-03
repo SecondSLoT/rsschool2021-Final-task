@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/user_photo"
+        android:layout_width="@dimen/message_avatar_size"
+        android:layout_height="@dimen/message_avatar_size"
+        android:layout_marginEnd="6dp"
+        android:contentDescription="@string/user_photo_content_description"
+        tools:src="@drawable/test_image" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/message_margin_end"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="Person name"
+        android:textColor="@color/username" />
+
+    <TextView
+        android:id="@+id/message_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/message_margin_end"
+        android:layout_marginBottom="6dp"
+        android:paddingTop="4dp"
+        android:paddingHorizontal="12dp"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum"
+        android:textColor="@color/message" />
+
+    <com.secondslot.finaltask.customview.CustomFlexBoxLayout
+        android:id="@+id/custom_flex_box_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/message_flex_box_layout_margin_end"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/add_reaction_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_add_button"
+            android:contentDescription="@string/add_reaction_button_content_description"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:tint="@color/message" />
+    </com.secondslot.finaltask.customview.CustomFlexBoxLayout>
+</merge>

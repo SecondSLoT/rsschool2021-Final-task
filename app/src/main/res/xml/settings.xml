@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        app:key="dark_theme"
+        app:title="@string/dark_theme"
+        app:summary="@string/switch_theme_summary"
+        app:useSimpleSummaryProvider="true"
+        app:defaultValue="false" />
+
+</PreferenceScreen>
